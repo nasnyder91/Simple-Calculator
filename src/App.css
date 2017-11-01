@@ -1,0 +1,51 @@
+.App {
+  height: 500px;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: Gray;
+}
+
+.Output{
+  flex: 1;
+  background-color: black;
+  margin: 10px;
+  color: green;
+  text-align: right;
+  font-size: 42px;
+}
+
+.Keypad{
+  flex: 5;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  border: 1px black solid;
+}
+
+.InputButton{
+  border: 1px black solid;
+}
+
+.InputButton:hover{
+  cursor: pointer;
+}
+
+.btnHighlighted{
+  background-color: darkgray;
+}
+
+.Btn13{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.Btn43{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
